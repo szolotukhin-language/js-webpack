@@ -7,6 +7,7 @@
     https://dev.to/riversun/how-to-run-webpack-dev-server-on-express-5ei9
     https://levelup.gitconnected.com/how-to-setup-environment-using-react-webpack-express-babel-d5f1b572b678
     https://dev.to/thespider/using-webpack-for-api-development-52g9
+    https://www.npmjs.com/package/xhr
 
 ####
 
