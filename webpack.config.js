@@ -12,6 +12,10 @@ module.exports = {
         compress: true,
         hot: true,
         port: 8081,
+        proxy: [{
+            path: '/api/',
+            target: 'http://localhost:8082'
+        }],
     },
     entry: {
         main: path.resolve(__dirname, './src/index.js'),

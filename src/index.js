@@ -1,7 +1,20 @@
-// Create heading node
-const heading = document.createElement('h1')
-heading.textContent = 'Interesting 222!'
-
-// Append heading node to the DOM
+const xhr = require("xhr")
 const app = document.querySelector('#root')
-app.append(heading)
+
+xhr({
+    method: "get",
+    json: true,
+    uri: "/api/users"
+}, function (err, resp, body) {
+    let users = resp.body;
+    let length = users.length;
+
+    for (var i = 0; i < length; i++) {
+        var u = users[i];
+
+        const heading = document.createElement('h4')
+        heading.textContent = 'Hello ' + u.username + "!";
+
+        app.append(heading)
+    }
+})

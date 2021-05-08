@@ -1,7 +1,9 @@
 {
   "name": "empty-project",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "xhr": "^2.6.0"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "express": "^4.17.1",
